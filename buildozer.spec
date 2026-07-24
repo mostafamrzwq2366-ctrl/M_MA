@@ -1,28 +1,21 @@
 [app]
 
-title = TwistMena
+# (str) Title of your application
+title = My Application
 
-package.name = m_ma
+# (str) Package name
+package.name = myapp
 
-package.domain = org.twistmena
+# (str) Package domain (needed for android/ios packaging)
+package.domain = org.test
 
+# (str) Source code where the main.py lives
 source.dir = .
 
+# (list) Source files to include (let empty to include all the files)
 source.include_exts = py,png,jpg,kv,atlas
 
+# (str) Application versioning (method 1)
 version = 0.1
 
-requirements = kivy,requests
-
-orientation = portrait
-
-android.permissions = INTERNET
-
-android.api = 33
-android.minapi = 21
-
-[buildozer]
-
-log_level = 2
-
-warn_on_root = 1
+#Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
