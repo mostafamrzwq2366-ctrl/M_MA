@@ -55,6 +55,34 @@ jobs:
 
       - name: Build APK with Buildozer
         run: |
+          yes | buildozer -v android debug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: package
+          path: bin/*.apk
+            libavformat-dev \
+            libavcodec-dev \
+            zlib1g-dev \
+            libffi-dev \
+            libssl-dev \
+            autoconf \
+            libtool \
+            pkg-config \
+            ant \
+            openjdk-17-jdk \
+            libncurses5:i386 \
+            libstdc++6:i386 \
+            libz1:i386
+
+      - name: Install Buildozer & Cython
+        run: |
+          pip install --upgrade pip
+          pip install cython==0.29.36 buildozer
+
+      - name: Build APK with Buildozer
+        run: |
           buildozer -v android debug
 
       - name: Upload APK
