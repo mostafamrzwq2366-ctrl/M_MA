@@ -6,7 +6,11 @@ package.name = m_ma
 
 package.domain = org.twistmena
 
+source.dir = .
+
 source.include_exts = py,png,jpg,kv,atlas
+
+version = 0.1
 
 requirements = kivy,requests
 
