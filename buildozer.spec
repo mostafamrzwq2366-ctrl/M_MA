@@ -18,4 +18,15 @@ source.include_exts = py,png,jpg,kv,atlas
 # (str) Application versioning (method 1)
 version = 0.1
 
-#Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+# (list) Requirements
+requirements = python3,kivy
+
+# (str) Supported orientations
+orientation = portrait
+
+# (list) Supported architectures
+android.archs = arm64-v8a
+
+[buildozer]
+log_level = 2
+warn_on_root = 1
